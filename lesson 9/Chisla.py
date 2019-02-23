@@ -1,8 +1,14 @@
 Chisla = []
+allDone = True
 
-while True:
+while allDone:
     
-    Chisla.append((int(input())))
+    consoleInput = input()
+    
+    if not consoleInput.lstrip("-").isnumeric():
+        break
+
+    Chisla.append(int(consoleInput))
     for i in Chisla:
         if  Chisla[len(Chisla) - 1] < 0:
             Chisla[len(Chisla) - 1] = -1
@@ -10,8 +16,6 @@ while True:
             Chisla[len(Chisla) - 1] = 1
         elif Chisla[len(Chisla) - 1] == 0:
             Chisla[len(Chisla) - 1] = 0
-        elif Chisla.append((int(input()))) == str:
-            break
 print(Chisla)
 
 
